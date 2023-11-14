@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card__bloque__titulos">
+            <h1 class="card__h1">Learn to code by watching others</h1>
+            <h2 class="card__h2">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</h2>
+        </div>
+        <div class="card__bloque__form">
+            <div class="card__bloque">
+                <h3 class="card__bloque__h3">Try it free 7 days <span class="card__bloque__span">then $20/mo. thereafter</span></h3>
+            </div>
+            <form class="card__form">
+                <div class="relative__name">
+                    <input class="card__form__name" type="text" placeholder="First Name">
+                    <p class="card__form__valid__name">First Name cannot be empty</p>
+                    <img class="card__form__error__name" src="images/icon-error.svg" alt="error">
+                </div>
+                <div class="relative__last">
+                    <input class="card__form__last" type="text" placeholder="Last Name">
+                    <p class="card__form__valid__last">Last Name cannot be empty</p>
+                    <img class="card__form__error__last" src="images/icon-error.svg" alt="error">
+                </div>
+                <div class="relative__email">
+                    <input class="card__form__email" type="email" placeholder="Email Address">
+                    <p class="card__form__valid__email">Looks like this is not  an email</p>
+                    <img class="card__form__error__email" src="images/icon-error.svg" alt="error">
+                </div>
+                <div class="relative__password">
+                    <input class="card__form__password" type="password" placeholder="Password">
+                    <p class="card__form__valid__password">Password cannot be empty</p>
+                    <img class="card__form__error__password" src="images/icon-error.svg" alt="error">
+                </div>
+                <input class="card__form__button" type="submit" value="Claim your free trial"/>
+                <p class="card__form__p">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+            </form>
+        </div>
+        <footer class="footer">
+            <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Héctor Montaño</a>.
+            </p>
+        </footer>
+    </div>
+
+
+    <script src="JS/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+:root
+{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.card
+{
+    margin: 0 auto;
+    /* max-width: 768px; */
+    max-width: 480px;
+    /* max-width: 375px; */
+    padding: 20px;
+    background-color: var(--Red);
+    background-image: url(../images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__h1
+{
+    color: white;
+    font-size: 26px;
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+.card__h2
+{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+
+.card__bloque
+{
+    background-color: var(--Blue);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.2);
+}
+
+.card__bloque__h3
+{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px;
+    margin: 0 22px;
+}
+
+.card__bloque__span
+{
+    font-weight: 400;
+}
+
+.card__form
+{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.2);
+}
+
+.card__form input
+{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+}
+
+.card__form__valid__name, .card__form__valid__last, .card__form__valid__email, .card__form__valid__password
+{
+    display: none;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: right;
+    color: var(--Red);
+    margin-top: -15px;
+    margin-bottom: 15px;
+
+}
+
+.relative__name, .relative__last, .relative__email, .relative__password
+{
+    position: relative;
+}
+
+.card__form__error__name, .card__form__error__last, .card__form__error__email, .card__form__error__password
+{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+input:nth-child(5)
+{
+    margin-bottom: 5px;
+}
+
+.card__form__button
+{
+    color: white;
+    background-color: var(--Green);
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.card__form__p
+{
+    color: var(--Grayish-Blue);
+    font-size: 11px;
+    padding: 13px;
+}
+
+.card__form__p span
+{
+    color: var(--Red);
+    font-weight: 700;
+}
+
+.attribution
+{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+/* @media screen and (min-width: 480px) */
+@media screen and (min-width: 768px)
+{
+    .card
+    {
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 50px;
+        background-image: url(../images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    .card__bloque__titulos
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        text-align: left;
+        /* margin-left: 60px; */
+    }
+    .card__bloque__form
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 40px; */
+        /* margin-right: 80px; */
+    }
+    .card__h1
+    {
+        font-size: 54px;
+    }
+    .card__h2
+    {
+        font-size: 18px;
+    }
+    .footer
+    {
+        grid-column: 1 / 3;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .card
+    {
+        /* height: 100vh; */
+    }
+}
