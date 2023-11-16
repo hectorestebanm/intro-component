@@ -1,3 +1,4 @@
+/* Variables a usar en la página */
 :root
 {
     --Red: hsl(0, 100%, 74%);
@@ -7,6 +8,7 @@
     --Grayish-Blue: hsl(246, 25%, 77%);
 }
 
+/* Reseteo de valores en la página */
 *
 {
     margin: 0;
@@ -14,6 +16,7 @@
     box-sizing: border-box;
 }
 
+/* Declaración de fuente en body */
 body
 {
     font-size: 16px;
@@ -23,17 +26,18 @@ body
 
 .card
 {
+    /* Centrado de card en pantalla en forma horizontal */
     margin: 0 auto;
-    /* max-width: 768px; */
     max-width: 480px;
-    /* max-width: 375px; */
     padding: 20px;
     background-color: var(--Red);
+    /* Imagen de background para pantalla Mobile */
     background-image: url(../images/bg-intro-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* Estilo para los títulos h1 y h2 */
 .card__h1
 {
     color: white;
@@ -50,6 +54,7 @@ body
     margin-bottom: 60px;
 }
 
+/* Estilos para el encabezado del formulario */
 .card__bloque
 {
     background-color: var(--Blue);
@@ -73,6 +78,7 @@ body
     font-weight: 400;
 }
 
+/* Estilo para el borde del form */
 .card__form
 {
     background-color: white;
@@ -82,6 +88,7 @@ body
     box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.2);
 }
 
+/* Estilo para los input del form */
 .card__form input
 {
     font-family: 'Poppins', sans-serif;
@@ -94,6 +101,7 @@ body
     border-radius: 5px;
 }
 
+/* Estilo para los mensajes de error */
 .card__form__valid__name, .card__form__valid__last, .card__form__valid__email, .card__form__valid__password
 {
     display: none;
@@ -106,11 +114,13 @@ body
 
 }
 
+/* Posición relativa para el bloque de errores */
 .relative__name, .relative__last, .relative__email, .relative__password
 {
     position: relative;
 }
 
+/* Posición absoluta para las imagenes de error */
 .card__form__error__name, .card__form__error__last, .card__form__error__email, .card__form__error__password
 {
     display: none;
@@ -124,6 +134,7 @@ input:nth-child(5)
     margin-bottom: 5px;
 }
 
+/* Estilo para el botón del formulario para enviar */
 .card__form__button
 {
     color: white;
@@ -150,6 +161,7 @@ input:nth-child(5)
     font-weight: 700;
 }
 
+/* Estilos para el footer */
 .attribution
 {
     font-size: 11px;
@@ -162,7 +174,7 @@ input:nth-child(5)
     text-decoration: none;
 }
 
-/* @media screen and (min-width: 480px) */
+/* Mediaquery para las pantallas mayores a 768px */
 @media screen and (min-width: 768px)
 {
     .card
@@ -171,11 +183,13 @@ input:nth-child(5)
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0 50px;
+        /* Imagen de background para pantallas mayores a 768px */
         background-image: url(../images/bg-intro-desktop.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
     }
+    /* Propiedades para los titulos del form en pantallas grandes */
     .card__bloque__titulos
     {
         display: flex;
@@ -184,7 +198,6 @@ input:nth-child(5)
         align-items: center;
         padding: 40px;
         text-align: left;
-        /* margin-left: 60px; */
     }
     .card__bloque__form
     {
@@ -192,8 +205,6 @@ input:nth-child(5)
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* padding: 40px; */
-        /* margin-right: 80px; */
     }
     .card__h1
     {
@@ -205,14 +216,7 @@ input:nth-child(5)
     }
     .footer
     {
+        /* Ocupo toda la fila por display grid */
         grid-column: 1 / 3;
-    }
-}
-
-@media screen and (min-width: 992px)
-{
-    .card
-    {
-        /* height: 100vh; */
     }
 }
